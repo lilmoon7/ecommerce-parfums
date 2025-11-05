@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Site E-commerce</title>
+    <link rel="stylesheet" href="e-shop.css">
+
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar">
+        <a href="e-shop.html" id="nav-home" class="logo">
+            E-PARFUM
+        </a>
+        <div class="nav-links">
+            <a href="e-shop.html" id="nav-home-link" class="nav-link">Accueil</a>
+            <a href="e-shop-women.html" class="nav-link">Produits</a>
+            <a href="#" class="nav-link" >À Propos</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-icons">
+            <a href="e-shop-checkout.html" id="nav-cart" class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span id="cart-count" class="cart-count-badge">0</span>
+            </a>
+            <a href="#" class="mobile-menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<section class="product-grid-section">
+    <div id="product-grid" class="product-grid">
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/eb/7e/19/eb7e1918ba4d974f7317a6a178eabd8c.jpg" alt="Produit 1" class="product-card-image">
+            <div class="product-card-content">
+                <h3 class="product-card-title">EMPORIO ARMANI - STRONGER WITH YOU INTENSELY EDP - 100ml</h3>
+                <p class="product-card-brand">Par Emporio Armani </p>
+                <p class="product-card-price">1,180.00 MAD</p>
+
+                <button class="add-to-cart-btn"
+                        data-id="p1"
+                        data-name="EMPORIO ARMANI - STRONGER WITH YOU INTENSELY EDP - 100ml"
+                        data-price="1180.00"
+                        data-image="https://i.pinimg.com/1200x/eb/7e/19/eb7e1918ba4d974f7317a6a178eabd8c.jpg">
+                    Ajouter au panier
+                </button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/bb/2b/13/bb2b1314bcb5e9718cc53531674554ff.jpg" alt="Produit 2" class="product-card-image">
+            <div class="product-card-content">
+                <h3 class="product-card-title">DIOR - SAUVAGE PARFUM – 100ml</h3>
+                <p class="product-card-brand">Par Dior</p>
+
+                <p class="product-card-price">1374.00 MAD</p>
+                <button class="add-to-cart-btn"
+                        data-id="p2"
+                        data-name="DIOR - SAUVAGE PARFUM – 100ml"
+                        data-price="1374.00"
+                        data-image="https://i.pinimg.com/1200x/bb/2b/13/bb2b1314bcb5e9718cc53531674554ff.jpg.jpg">
+                    Ajouter au panier
+                </button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/76/f0/47/76f047679b6b09826f51d8c4d40c8622.jpg" alt="Produit 3" class="product-card-image">
+            <div class="product-card-content">
+                <h3 class="product-card-title">JEAN PAUL GAULTIER - LE MALE LE PARFUM - 75ml</h3>
+                <p class="product-card-brand">Par Jean Paul Gaultier </p>
+                <p class="product-card-price">990.00 MAD</p>
+
+                <button class="add-to-cart-btn"
+                        data-id="p3"
+                        data-name="JEAN PAUL GAULTIER - LE MALE LE PARFUM - 75ml"
+                        data-price="990.00"
+                        data-image="https://i.pinimg.com/736x/76/f0/47/76f047679b6b09826f51d8c4d40c8622.jpg">
+                    Ajouter au panier
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/63/fc/c5/63fcc5bf89aaa97f3d9dd330dc1eaf5c.jpg" alt="Produit 1" class="product-card-image">
+            <div class="product-card-content">
+                <h3 class="product-card-title">VERSACE - VERSACE EROS EAU DE PARFUM - 100ml</h3>
+                <p class="product-card-brand">Par Versace</p>
+                <p class="product-card-price">1,018.00 MAD</p>
+                <button class="add-to-cart-btn"
+                        data-id="p1"
+                        data-name="VERSACE - VERSACE EROS EAU DE PARFUM - 100ml"
+                        data-price="1018.00"
+                        data-image="https://i.pinimg.com/1200x/63/fc/c5/63fcc5bf89aaa97f3d9dd330dc1eaf5c.jpg">
+                    Ajouter au panier
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <p>&copy; 2025 E-Shop. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Politique de confidentialité</a>
+            <a href="#" class="footer-link">Termes d'utilisation</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="e-shop.js"></script>
+</body>
+</html>

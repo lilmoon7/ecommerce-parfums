@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site E-commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="e-shop.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar">
+        <a href="e-shop.html" id="nav-home" class="logo">
+            E-PARFUM
+        </a>
+        <div class="nav-links">
+            <a href="e-shop.html" id="nav-home-link" class="nav-link">Accueil</a>
+            <a href="#" class="nav-link">Produits</a>
+            <a href="#" class="nav-link" >À Propos</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-icons">
+            <a href="e-shop-checkout.html" id="nav-cart" class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span id="cart-count" class="cart-count-badge">0</span>
+            </a>
+            <a href="#" class="mobile-menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main class="main-container">
+    <div id="page-home" class="page active">
+        <section class="hero-section" style="background-image: url('https://i.pinimg.com/736x/a1/77/cd/a177cdd7e8023d19d3b17c1da6422f77.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Nouvelle Collection </h1>
+                <p class="hero-subtitle">Découvrez nos dernières nouveautés et profitez d'offres exclusives.</p>
+                <a href="#" id="home-cta-button" class="hero-cta-button">
+                    Découvrir
+                </a>
+            </div>
+        </section>
+
+        <div class="category-grid">
+        <section class="category-section">
+            <h2 class="section-title">CATEGORIES</h2>
+            <table class="tabl">
+                <tr>
+                    <th>
+                <div class="category-card">
+                    <img src='https://i.pinimg.com/1200x/b6/06/33/b60633a81eb4e0e70915af90870dbf52.jpg' alt="Femme" class="category-card-image">
+                    <div class="category-card-content">
+                        <a href="e-shop-women.html" class="category-card-title" data-category="femme">FEMME</a>
+                        <h5 class="category-card-description">Découvrez des fragrances captivantes, des notes florales délicates aux parfums boisés et sensuels.</h5>
+                    </div>
+                </div></th>
+        <th>
+                <div class="category-card">
+                    <img src="https://i.pinimg.com/1200x/25/a6/c1/25a6c16b0351a0d4f85be25f032c2557.jpg" alt="Homme" class="category-card-image">
+                    <div class="category-card-content">
+                        <a href="e-shop-men.html" class="category-card-title" data-category="homme">HOMME</a>
+                        <h5 class="category-card-description">Une collection de parfums masculins alliant fraîcheur et caractère, des notes marines aux accords épicés.</h5>
+                    </div>
+                </div></th>
+        <th>
+                <div class="category-card">
+                    <img src='https://i.pinimg.com/736x/13/de/12/13de12c3cf9cd010d54ab1433140a40c.jpg' alt="Packs" class="category-card-image">
+                    <div class="category-card-content">
+                        <a href="e-shop-pack.html" class="category-card-title" data-category="packs">PACKS </a>
+                        <h5 class="category-card-description">L'idée cadeau idéale. Trouvez des coffrets exclusifs combinant nos meilleurs parfums et produits de soin.</h5>
+                    </div>
+                </div></th>
+                </tr>
+            </table>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <p>&copy; 2025 E-Shop. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Politique de confidentialité</a>
+            <a href="#" class="footer-link">Termes d'utilisation</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="e-shop.js"></script>
+</body>
+</html>

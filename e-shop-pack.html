@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Site E-commerce</title>
+    <link rel="stylesheet" href="e-shop.css">
+
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar">
+        <a href="e-shop.html" id="nav-home" class="logo">
+            E-PARFUM
+        </a>
+        <div class="nav-links">
+            <a href="e-shop.html" id="nav-home-link" class="nav-link">Accueil</a>
+            <a href="e-shop-women.html" class="nav-link">Produits</a>
+            <a href="#" class="nav-link" >À Propos</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-icons">
+            <a href="e-shop-checkout.html" id="nav-cart" class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span id="cart-count" class="cart-count-badge">0</span>
+            </a>
+            <a href="#" class="mobile-menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </a>
+        </div>
+    </nav>
+</header>
+
+
+<section class="product-grid-section">
+    <div id="product-grid" class="product-grid">
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/2c/a9/d7/2ca9d72ce3cf50bef0c6db6fa2d7bee3.jpg" alt="Produit 1" class="product-card-image">
+            <div class="product-card-content">
+                <h3 class="product-card-title">RITUALS The Ritual Of KARMA coffret S</h3>
+                <p class="product-card-brand">Par Rituals</p>
+                <p class="product-card-price">450.00 MAD</p>
+                <button class="add-to-cart-btn"
+                        data-id="p1"
+                        data-name="RITUALS The Ritual Of KARMA coffret S"
+                        data-price="450.00"
+                        data-image="https://i.pinimg.com/736x/2c/a9/d7/2ca9d72ce3cf50bef0c6db6fa2d7bee3.jpg">
+                    Ajouter au panier
+                </button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/a0/6f/74/a06f74e10e1ec4d3a238c7a36f600952.jpg" alt="Produit 2" class="product-card-image">
+            <div class="product-card-content">
+                <h3 class="product-card-title">GUCCI - COFFRET GUILTY Eau De Toilette</h3>
+                <p class="product-card-brand">Par Gucci</p>
+                <p class="product-card-price">1425.00 MAD</p>
+                <button class="add-to-cart-btn"
+                        data-id="p2"
+                        data-name="GUCCI - COFFRET GUILTY Eau De Toilette"
+                        data-price="1425.00"
+                        data-image="https://i.pinimg.com/1200x/a0/6f/74/a06f74e10e1ec4d3a238c7a36f600952.jpg">
+                    Ajouter au panier
+                </button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/ac/5d/4d/ac5d4d0624a6338bd5a07b08fc09552f.jpg" alt="Produit 3" class="product-card-image">
+            <div class="product-card-content">
+                <h3 class="product-card-title">PRADA PARADOXE COFFRET EAU DE PARFUM</h3>
+                <p class="product-card-brand">Par Prada</p>
+                <p class="product-card-price">1,673.00 MAD</p>
+                <button class="add-to-cart-btn"
+                        data-id="p3"
+                        data-name="PRADA PARADOXE COFFRET EAU DE PARFUM"
+                        data-price="1673.00"
+                        data-image="https://i.pinimg.com/1200x/ac/5d/4d/ac5d4d0624a6338bd5a07b08fc09552f.jpg">
+                    Ajouter au panier
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/c9/b4/82/c9b482f0e016b80fb6fd1f6ffd2f8195.jpg" alt="Produit 1" class="product-card-image">
+            <div class="product-card-content">
+                <h3 class="product-card-title">GIORGIO ARMANI- ACQUA DI GIÒ </h3>
+                <p class="product-card-brand">Par Giorgio Armani</p>
+                <p class="product-card-price">890.00 MAD</p>
+                <button class="add-to-cart-btn"
+                        data-id="p1"
+                        data-name="GIORGIO ARMANI- ACQUA DI GIÒ "
+                        data-price="890.00"
+                        data-image="https://i.pinimg.com/1200x/c9/b4/82/c9b482f0e016b80fb6fd1f6ffd2f8195.jpg">
+                    Ajouter au panier
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <p>&copy; 2025 E-Shop. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Politique de confidentialité</a>
+            <a href="#" class="footer-link">Termes d'utilisation</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="e-shop.js"></script>
+</body>
+</html>

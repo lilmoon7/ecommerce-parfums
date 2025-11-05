@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="e-shop.css">
+</head>
+<body>
+<main class="main-container">
+<div id="page-checkout" class="page">
+    <h1 class="page-title">Paiement</h1>
+
+    <div class="checkout-layout">
+        <div class="checkout-form-container">
+            <form id="checkout-form" class="checkout-form">
+                <section class="form-section">
+                    <h2 class="form-section-title">Informations de Livraison</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstname" class="form-label">Prénom</label>
+                            <input type="text" id="firstname" class="form-input" name="given-name" autocomplete="given-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="form-label">Nom</label>
+                            <input type="text" id="lastname" class="form-input" name="family-name" autocomplete="family-name" required>
+                        </div>
+                        <div class="form-group-full">
+                            <label for="address" class="form-label">Adresse</label>
+                            <input type="text" id="address" class="form-input" autocomplete="street-address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city" class="form-label">Ville</label>
+                            <input type="text" id="city" class="form-input" autocomplete="address-level2" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode" class="form-label">Code Postal</label>
+                            <input type="text" id="zipcode" class="form-input" inputmode="numeric" autocomplete="postal-code" maxlength="10" required>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <h2 class="form-section-title">Paiement</h2>
+                    <div class="form-payment-details">
+                        <div class="form-group-full">
+                            <label for="card-number" class="form-label">Numéro de Carte</label>
+                            <input type="text" id="card-number" placeholder="0000 0000 0000 0000" class="form-input" inputmode="numeric" autocomplete="cc-number" maxlength="19" required>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="card-expiry" class="form-label">Date d'Expiration</label>
+                                <input type="text" id="card-expiry" placeholder="MM/AA" class="form-input" inputmode="numeric" autocomplete="cc-exp" maxlength="5" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="card-cvc" class="form-label">CVC</label>
+                                <input type="text" id="card-cvc" placeholder="123" class="form-input" inputmode="numeric" autocomplete="cc-csc" maxlength="4" required>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div id="form-error" class="form-error" aria-live="polite"></div>
+
+                <button type="submit" class="submit-button">
+                    Payer Maintenant
+                </button>
+            </form>
+        </div>
+
+        <div class="summary-container">
+            <div class="summary-box">
+                <h2 class="summary-title">Résumé de la Commande</h2>
+                <div id="cart-summary-items" class="summary-items-container">
+                    <p id="empty-cart-message" class="empty-cart-message">Votre panier est vide.</p>
+                </div>
+
+                <div class="summary-totals">
+                    <div class="summary-line">
+                        <span>Sous-total</span>
+                        <span id="summary-subtotal">0.00 MAD</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Livraison</span>
+                        <span id="summary-shipping">50.00 MAD</span>
+                    </div>
+                    <div class="summary-total-line">
+                        <span>Total</span>
+                        <span id="summary-total">50.00 MAD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="payment-success-message" class="success-modal">
+    <div class="success-modal-content">
+        <svg xmlns="http://www.w3.org/2000/svg" class="success-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        <h2 class="success-title">Paiement Réussi !</h2>
+        <p class="success-text">Merci pour votre commande. Vous allez être redirigé vers l'accueil.</p>
+    </div>
+</div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <p>&copy; 2025 E-Shop. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Politique de confidentialité</a>
+            <a href="#" class="footer-link">Termes d'utilisation</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+    </div>
+</footer>
+<script src="e-shop.js"></script>
+
+</body>
+</html>
