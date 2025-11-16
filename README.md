@@ -15,7 +15,7 @@ L'objectif était d'intégrer une maquette (inspirée de divers designs) en HTML
 
 ## Technologies utilisées
 * HTML5
-* CSS3 (Flexbox, Grid)
+* CSS3 
 * JavaScript (ES6+) pour la logique du panier
   
 <img width="1919" height="1009" alt="Screenshot 2025-11-14 003106" src="https://github.com/user-attachments/assets/981d832e-2efc-4e82-891f-c0e49d8b5079" />
